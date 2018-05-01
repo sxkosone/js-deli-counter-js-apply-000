@@ -1,10 +1,11 @@
 var katzDeliLine = [];
-var orderNumber = 1;
+var orderNumber = 0;
 
 function takeANumber(katzDeliLine) {
-  katzDeliLine.push(orderNumber);
   orderNumber++;
-  return `Welcome. You are number ${katzDeliLine.length}.`;
+  katzDeliLine.push(orderNumber);
+  
+  return `Welcome. You are number ${orderNumber}.`;
 }
 
 function nowServing(katzDeliLine) {
